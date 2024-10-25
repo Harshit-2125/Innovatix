@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('https://cdn.discordapp.com/attachments/1040533149215633478/1299428874513289305/Aees.jpeg?ex=671d2af1&is=671bd971&hm=71e44dd38daea39185b307aca257a45dc4c7e926a7e00774e3c545bb713421fb&');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.box:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.upload-section {
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh; /* Adjust this value if you want the section to take up more space */
+    margin-top: 50px;
+}
+
+.upload-section p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.upload-btn {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #e6b800;
+}

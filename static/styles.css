@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url('https://www.sunrun.com/sites/default/files/styles/gsc_feature_750x300/public/how-long-do-solar-panels-really-last-opt.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+.content {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 30px; /* Space between paragraph and videos */
+}
+
+.videos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between videos */
+}
+
+iframe {
+    flex: 1;
+    max-width: 48%; /* To ensure the videos fit in one row */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .videos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}

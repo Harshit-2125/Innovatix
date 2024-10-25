@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Your PIN</title>
+    <link rel="stylesheet" href="settingpin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Set Your PIN</h1>
+        <form id="setPinForm">
+            <label for="newPin">New PIN:</label>
+            <input type="password" id="newPin" name="newPin" required maxlength="4" pattern="\d{4}">
+            <label for="confirmPin">Confirm PIN:</label>
+            <input type="password" id="confirmPin" name="confirmPin" required maxlength="4" pattern="\d{4}">
+            <button type="submit">Set PIN</button>
+        </form>
+        <p id="set-error-message" class="error-message"></p>
+        <p><a href="login.html">Already have a PIN? Log in here.</a></p>
+    </div>
+    <script src="settingpin.js"></script>
+</body>
+</html>

@@ -1,8 +1,3 @@
-@font-face {
-    font-family: Chana;
-    src: url(/Fonts/chaney-ultraextended-webfont.ttf);
-  }
-
 *{
     margin: 0;
     padding: 0;
@@ -586,3 +581,66 @@ a {
     color: #fff;
     border-radius: 0.5rem;
 }
+
+.news-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.news-section {
+    padding: 20px;
+    background-color: #40444c; /* Change background to black */
+    color: #fff; /* Change text color to white for better contrast */
+    text-align: center;
+}
+.news-section h2{
+    font-size: 35px;
+}
+.news-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-item h3 {
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.news-item p {
+    margin: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.news-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.news-item a:hover {
+    color: #007BFF;
+}
+
+

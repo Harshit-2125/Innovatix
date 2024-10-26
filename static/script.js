@@ -206,3 +206,18 @@ function prevReview() {
 setInterval(() => {
     nextReview();
 }, 4000);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const newsItems = document.querySelectorAll('.news-item');
+  
+  newsItems.forEach((item, index) => {
+      item.style.opacity = 0;
+      item.style.transform = 'translateY(20px)';
+      
+      setTimeout(() => {
+          item.style.transition = 'opacity 0.5s, transform 0.5s';
+          item.style.opacity = 1;
+          item.style.transform = 'translateY(0)';
+      }, index * 300); // Stagger the animation
+  });
+});
